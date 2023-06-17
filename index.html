@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Currency Converter</h1>
+    </div>
+    <div id="converter">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+
+        <label for="from">From:</label>
+        <select id="from">
+            <option value="usd">US Dollars (USD)</option>
+            <option value="cad">Canadian Dollars (CAD)</option>
+        </select>
+
+        <label for="to">To:</label>
+        <select id="to">
+            <option value="usd">US Dollars (USD)</option>
+            <option value="cad">Canadian Dollars (CAD)</option>
+        </select>
+
+        <button onclick="convert()">Convert</button>
+
+        <div id="result"></div>
+    </div> 
+</body>
+</html>
